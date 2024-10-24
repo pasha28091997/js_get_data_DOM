@@ -9,10 +9,14 @@ for (const key of element) {
 
 const averagePopulation = allPopulationNumber / element.length;
 
+const formattedPopulation = averagePopulation.toLocaleString('uk-UA');
+
 const classTotalPopulation = document.querySelector('.total-population');
 
-classTotalPopulation.innerHTML = allPopulationNumber;
+const formattedallPopulationNumber = averagePopulation.toLocaleString('uk-UA');
+
+classTotalPopulation.innerHTML = formattedallPopulationNumber;
 
 const classAveragePopulation = document.querySelector('.average-population');
 
-classAveragePopulation.innerHTML = averagePopulation;
+classAveragePopulation.innerHTML = formattedPopulation;
