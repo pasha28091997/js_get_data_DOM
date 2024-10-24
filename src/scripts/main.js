@@ -13,7 +13,8 @@ const formattedPopulation = averagePopulation.toLocaleString('uk-UA');
 
 const classTotalPopulation = document.querySelector('.total-population');
 
-const formattedallPopulationNumber = averagePopulation.toLocaleString('uk-UA');
+const formattedallPopulationNumber =
+  allPopulationNumber.toLocaleString('uk-UA');
 
 classTotalPopulation.innerHTML = formattedallPopulationNumber;
 
